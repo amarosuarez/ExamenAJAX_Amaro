@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #main {
+            width: 100%;
+            text-align: center;
+        }
+
+        #contenido {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 25%;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        tr {
+            width: 100%;
+        }
+
+        th, td {
+            width: 50%;
+            text-align: start;
+            border: 1px solid black;
+        }
+
+        td {
+            cursor: pointer;
+        }
+
+        th {
+            background-color: aliceblue;
+        }
+
+        #divDetails {
+            visibility: hidden;
+            width: 25%;
+            margin: auto;
+            background-color: aliceblue;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #imgPersona {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Selecciona un departamento</h1>
+
+        <select id="desplegableDepartamentos">
+            <option value="0">Por defecto</option>
+        </select>
+    </div>
+
+    <div id="contenido">
+        <div id="divTabla"></div>
+
+        <div id="divDetails">
+            <img id="imgPersona" />
+            <h1 id="nombre"></h1>
+            <h2 id="apellidos"></h2>
+            <h3 id="departamento"></h3>
+            <h4 id="direccion"></h4>
+            <p id="informacion"></p>
+        </div>
+
+    </div>
+    <script src="../js/site.js"></script>
+</body>
+</html>
